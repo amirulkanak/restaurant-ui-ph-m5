@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Google Font */
+
+/* Font & Color variable */
+
+:root {
+  /* Font */
+  --font-workSans: 'Work Sans', sans-serif;
+  /* color */
+  --white-color: #fff;
+  --black-color: #000;
+  --btn-color: rgb(82, 195, 3);
+  --tag-color: rgba(82, 195, 3, 0.15);
+  --font-color: rgb(16, 16, 16);
+}
+
+/*=== Global style ===*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: var(--font-workSans);
+}
+
+.btn{
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-style: none;
+  background-color: var(--btn-color);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.3125rem;
+  padding-bottom: 1.3125rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.438rem;
+  letter-spacing: 0%;
+  color: var(--white-color);
+}
+
+/*=== Design ===*/
+
+.hero{
+  display: flex;
+  height: 57.4rem;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(0deg, #101010 -19.5%, rgba(16, 16, 16, 0.00) 100%), url('../images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content{
+  max-width: 63.9rem;
+}
+
+.hero-subtittle{
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 2.375rem;
+  letter-spacing: 0%;
+  color: var(--white-color);
+  opacity: 0.8;
+}
+
+.hero-tittle{
+  margin-bottom: 1.5rem;
+  max-width: 62.5rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 5rem;
+  letter-spacing: 0%;
+  color: var(--white-color);
+}
+
+.hero-description{
+  margin-bottom: 2rem;
+  text-wrap: pretty;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.75rem;
+  letter-spacing: 0%;
+  color: var(--white-color);
+  opacity: 0.7;
+}
+
+.btn-container{
+  text-align: center;
+}
+
+/*=== Card ===*/
+
+.card{
+  width: 26.5rem;
+  border-radius: 1rem;
+}
+
+.card-img{
+  margin-bottom: 2rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-tag{
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--tag-color);
+  padding-top: .88rem;
+  padding-bottom: .88rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.75rem;
+  letter-spacing: 0%;
+  color: var(--font-color);
+}
+
+.card-tittle{
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 2.938rem;
+  letter-spacing: 0%;
+  color: var(--font-color);
+}
+
+.card-description{
+  text-wrap: pretty;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.75rem;
+  letter-spacing: 0%;
+  color: var(--font-color);
+  opacity: 0.7;
+}
+
+/*=== Food Section ===*/
+
+.food-brand{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 82.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-subtittle{
+  margin-bottom: 1rem;
+  margin-top: 10.44rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.75rem;
+  letter-spacing: 0%;
+  color: var(--font-color);
+  opacity: 0.6;
+}
+
+.food-tittle{
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 4rem;
+  letter-spacing: 0%;
+  color: var(--font-color);
+}
+
+.food-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.food-brand-btn{
+  margin-top: 4rem;
+  margin-bottom: 11.5rem;
+}
